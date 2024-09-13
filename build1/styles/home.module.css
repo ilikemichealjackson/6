@@ -1,0 +1,147 @@
+/* Main container with dynamic background color */
+.container {
+  padding: 50px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+/* Title styles */
+.title {
+  font-size: 3rem;
+  color: #0070f3;
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Search container with search icon and input */
+.searchContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.searchInput {
+  width: 300px;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+/* Generic icon styling */
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Song list grid with circular song containers */
+.songList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.song {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.song:hover {
+  transform: scale(1.05);
+}
+
+/* Song icon (circular) inside each song card */
+.songIcon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Audio player styles */
+.audioPlayer {
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* Icon button styles (like, playlist) */
+.iconButton {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Playlist dropdown menu */
+.playlistContainer {
+  position: relative;
+}
+
+.playlistDropdown {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+  z-index: 10;
+}
+
+.playlistContainer:hover .playlistDropdown {
+  display: block;
+}
+
+/* Playlist dropdown list items */
+.playlistDropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.playlistDropdown ul li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.playlistDropdown ul li:hover {
+  background-color: #f4f4f4;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .searchInput {
+    width: 200px;
+  }
+
+  .song {
+    padding: 15px;
+    border-radius: 40px;
+  }
+
+  .songIcon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .iconButton {
+    width: 25px;
+    height: 25px;
+  }
+}

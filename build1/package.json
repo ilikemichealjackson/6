@@ -1,0 +1,22 @@
+{
+  "name": "music-streaming-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "13.x.x",   // Use the latest stable version of Next.js
+    "react": "18.x.x",  // Use the latest stable version of React
+    "react-dom": "18.x.x",  // React DOM to render React components
+    "react-audio-player": "^3.0.3",  // Audio player component
+    "typescript": "^5.x.x"  // TypeScript for typed JavaScript
+  },
+  "devDependencies": {
+    "eslint": "^8.x.x",  // Linting tool for JavaScript/TypeScript
+    "eslint-config-next": "13.x.x"  // ESLint configuration specific to Next.js
+  }
+}
